@@ -205,7 +205,7 @@ while True:
                                 b.close()
                         except IOError:
                                 d=0
-        s = serial.Serial('COM6',115200) #open serial port
+        s = serial.Serial('COM16',115200) #open serial port
         print ("Iniciando...")
         serialcmd="\r\n\r\n" #turn printer on
         s.write(serialcmd.encode())
